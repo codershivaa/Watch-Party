@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#roomStatus {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#messages {
+    width: 500px;
+    height: 250px;
+    margin: 20px auto;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.my-message {
+    text-align: right;
+    margin: 8px 5px;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.other-message {
+    text-align: left;
+    margin: 8px 5px;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.my-message strong,
+.other-message strong {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.my-message small,
+.other-message small {
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#mainContent {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+#videoSection,
+#chatSection {
+    flex: 1;
+}
+
+#videoPlayer {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+#chat {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#videoSection {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#roomControls {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#members {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+#members h3 {
+    margin-top: 0;
+}
+
+#roomStatus {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 12px;
+    background: #eef6ee;
+    border-radius: 8px;
+}
+
+#messages {
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#messageInput {
+    width: 70%;
+}
+
+#messages {
+    height: 400px;
+    overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+    #mainContent {
+        flex-direction: column;
+    }
+
+    #videoSection,
+    #chatSection {
+        width: 100%;
+    }
+}
+
+main > p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#roomControls {
+    text-align: center;
+}
+
+#roomControls input {
+    width: 220px;
+    margin: 5px;
+}
+
+#memberList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#memberList li {
+    padding: 8px 12px;
+    margin-top: 6px;
+    background: #f4f6f8;
+    border-radius: 8px;
+}
+
+#mainContent {
+    gap: 30px;
+}
+
+#videoSection h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#chatSection h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#videoSection,
+#chatSection {
+    min-width: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#createRoom {
+    background: #222;
+    color: white;
+}
+
+#joinRoom {
+    background: #555;
+    color: white;
+}
+
+#sendMessage {
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#chat {
+    text-align: left;
+}
+
+#chat #sendMessage {
+    margin-left: 5px;
+}
+
+#messageInput {
+    max-width: 100%;
+}
+
+#roomStatus {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#members h3 {
+    margin-bottom: 12px;
+}
+
+#videoSection,
+#chat {
+    box-sizing: border-box;
+}

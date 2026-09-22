@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watch Party</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+</head>
+
+<body>
+
+    <header>
+    <h1>🎬 Watch Party</h1>
+</header>
+    <main>
+            <p>Watch movies together with your friends.</p>
+
+    <button id="createRoom">Create Room</button>
+    <br><br>
+
+    <section id="roomControls">
+<input type="text" id="usernameInput" placeholder="Enter your name">
+
+<br><br>
+
+<input type="text" id="roomInput" placeholder="Enter Room ID">
+<button id="joinRoom">Join Room</button>
+
+<p id="roomStatus">Not connected to a room</p>
+
+<button id="copyRoom">📋 Copy Room ID</button>
+<button id="leaveRoom">🚪 Leave Room</button>
+
+</section>
+
+<div id="members">
+    <h3>👥 People in Room</h3>
+    <ul id="memberList"></ul>
+</div>
+
+<br><br>
+<div id="mainContent">
+
+    <section id="videoSection">
+
+        <h2>🎥 Watch Party Video</h2>
+
+        <video
+            id="videoPlayer"
+            width="700"
+            controls
+        >
+            <source src="videos/sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p id="syncStatus">🟢 Video synchronized</p>
+
+    </section>
+
+
+    <section id="chatSection">
+
+        <div id="chat">
+
+            <h2>💬 Chat</h2>
+
+            <div id="messages"></div>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type a message..."
+            >
+
+            <button id="sendMessage">Send</button>
+
+        </div>
+
+    </section>
+
+</div>
+    </main>
+
+   <script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
