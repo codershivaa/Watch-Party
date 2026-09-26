@@ -69,7 +69,7 @@ External Video Host
         │
         ├── Browser A
         └── Browser B
-
+```
 
 ## 🚀 Run Locally
 
