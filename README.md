@@ -2,6 +2,10 @@
 
 A real-time watch party web application that allows friends to watch a video together, stay synchronized, and chat in real time.
 
+## 🌐 Live Demo
+
+[Open Watch Party](https://watch-party-r2id.onrender.com)
+
 
 ## ✨ Features
 
@@ -44,6 +48,27 @@ A real-time watch party web application that allows friends to watch a video tog
 5. A new user joining the room receives the current video position and playback state.
 6. Users can chat with everyone in the room while watching the video together.
 
+## 🏗️ Architecture
+
+```text
+User Browser A ──┐
+                 │
+                 ▼
+            Socket.IO
+                 │
+                 ▼
+        Node.js + Express
+                 │
+                 ▼
+          Room Management
+                 │
+                 ▼
+User Browser B ──┘
+
+External Video Host
+        │
+        ├── Browser A
+        └── Browser B
 
 
 ## 🚀 Run Locally
@@ -68,19 +93,10 @@ Then open:
 http://localhost:3000
 ```
 
-### 🎥 Add a Sample Video
+### 🎥 Video Source
 
-The sample video is not included in the repository because of its file size.
+The project uses an externally hosted sample video, so the video file is not stored in the GitHub repository.
 
-To test video playback locally:
-
-```text
-client/
-└── videos/
-    └── sample.mp4
-```
-
-Place your own MP4 video at `client/videos/sample.mp4` and start the server again.
 
 
 ## 📁 Project Structure
@@ -90,8 +106,6 @@ Watch-Party/
 ├── client/
 │   ├── images/
 │   │   └── favicon.svg
-│   ├── videos/
-│   │   └── sample.mp4(you can add)
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
@@ -166,8 +180,8 @@ Building this project helped me understand:
 
 ## 🔮 Future Improvements
 
-* 🌐 Deploy the application for online access
-* 🎬 Support external video sources
+* 🔗 Add shareable room links
+* 🎬 Allow users to add their own video URLs
 * 🎙️ Add voice/video communication
 * 🔐 Add user authentication
 * 💾 Store chat history
